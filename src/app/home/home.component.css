@@ -1,0 +1,9 @@
+.container {
+    color: white;
+}
+#about {
+    border-right:solid rgb(255, 255, 255) 3px;
+}
+#featured {
+    border-left:solid rgb(255, 255, 255) 3px;
+}

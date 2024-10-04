@@ -1,0 +1,20 @@
+accordion-group::ng-deep .btn-link {
+    color: white;
+}
+accordion-group::ng-deep .card-header {
+    background-color: #000000;
+}
+accordion-group::ng-deep .card-body {
+    background-color: black;
+    color: white;
+}
+h3 {
+    color: white;
+}
+#pdf{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.089);
+}
+#titulo {
+    background-color: rgba(0, 0, 0, 0);
+}

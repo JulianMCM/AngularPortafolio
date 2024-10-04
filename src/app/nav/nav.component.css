@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    justify-content: center;
+    /* Centra los enlaces */
+    padding: 1rem;
+    /* Reduce el padding del menú */
+    background-color: #ffffff00;
+    /* Color de fondo suave */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Asegura que el menú esté siempre por encima del contenido */
+}
+
+a[mat-tab-link] {
+    margin: 0 10px;
+    /* Reduce el espacio entre los enlaces */
+    padding: 8px 16px;
+    /* Ajusta el padding interno de los enlaces */
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+a[mat-tab-link].mat-tab-link-active {
+    border-bottom: 2px solid #000000;
+    color: #ffffff;
+}
+
+a[mat-tab-link]:hover {
+    color: #ffffff;
+}

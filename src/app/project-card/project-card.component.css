@@ -1,0 +1,8 @@
+.card-body {
+    background-color: black;
+    color: white;
+}
+.card-footer {
+    background-color: black;
+    border-top:solid rgb(255, 255, 255) 1px;
+}

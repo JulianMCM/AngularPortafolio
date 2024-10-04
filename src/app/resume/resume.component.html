@@ -1,0 +1,126 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn mb-5 shadow" id="pdf">Descargar currículum en PDF</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen" [isOpen]="true">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading id="titulo">
+                    <div style="visibility: hidden;"><img src="/flecha.png" width="20" height="20"></div>
+                    <div class="btn-link">Experiencia</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen"><img src="/flecha.png" width="20" height="20"></div>
+                        <div *ngIf="isWorkExperienceOpen"><img src="/flecha.png" width="20" height="20" style="transform: rotate(90deg);"></div>
+                    </div>
+                </button>
+
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Asesor comercial y encargado de servicio al cliente</h2>
+                    <h3>Caicedonia OnLine Internet</h3>
+                    <ul>
+                        <li>Atención al cliente</li>
+                        <li>Mantenimiento informático</li>
+                        <li>Software</li>
+                        <li>Programas de ofimática</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Técnico de soporte de TI</h2>
+                    <h3>Grupo ASD</h3>
+                    <ul>
+                        <li>Soporte técnico</li>
+                        <li>Resolución de problemas</li>
+                        <li>Tecnología de la información</li>
+                        <li>Hardware</li>
+                    </ul>
+                </div>
+                <hr>
+            </accordion-group>
+
+            <accordion-group [(isOpen)]="isEducationOpen" [isOpen]="true">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"><img src="/flecha.png" width="20" height="20"></div>
+                    <div class="btn-link">Educación</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;"><img src="/flecha.png" width="20" height="20"></div>
+                        <div *ngIf="isEducationOpen" style="color: white;"><img src="/flecha.png" width="20" height="20" style="transform: rotate(90deg);"></div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Tecnólogo en Sistemas de la Información</h2>
+                    <h3>Universidad del Valle (CO)</h3>
+                    <ul>
+                        <li>Desarrollo de software</li>
+                    </ul>
+                </div>
+            </accordion-group>
+
+            <!-- <accordion-group [(isOpen)]="isCertificationsOpen" [isOpen]="true">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"><img src="/flecha.png" width="20" height="20"></div>
+                    <div class="btn-link">Certifications</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationsOpen" style="color: white;"><img src="/flecha.png" width="20" height="20"></div>
+                        <div *ngIf="isCertificationsOpen" style="color: white;"><img src="/flecha.png" width="20" height="20" style="transform: rotate(90deg);"></div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h3>Nombre certificado</h3>
+                    <ul>
+                        <li>Fecha</li>
+                        <li>Algo</li>
+                    </ul>
+                    <h3>Nombre certificado</h3>
+                    <ul>
+                        <li>Fecha</li>
+                        <li>Algo</li>
+                    </ul>
+                </div>
+            </accordion-group> -->
+
+            <accordion-group [(isOpen)]="isSkillsOpen" [isOpen]="true">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"><img src="/flecha.png" width="10" height="20"></div>
+                    <div class="btn-link">Skills</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;"><img src="/flecha.png" width="20" height="20"></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;"><img src="/flecha.png" width="20" height="20" style="transform: rotate(90deg);"></div>
+                    </div>
+                </button>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Lenguajes de programacion:</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>TypeScript</li>
+                            <li>Lenguaje</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks:</h3>
+                        <ul>
+                            <li>Angular</li>
+                            <li>NodeJs</li>
+                            <li>ExpressJs</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Otras Skills</h3>
+                        <ul>
+                            <li>Herramientas de ofimática</li>
+                            <li>MongoDB</li>
+                            <li>MySql</li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+
+</div>

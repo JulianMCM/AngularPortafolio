@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <!--About me-->
+        <div class="col-lg m-1" id="about">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="/pfp.PNG" alt="profile picture" width="256" height="256" class="rounded-circle">
+                <p>Joven desarrollador de software con conocimientos de FullStack, cuento con conocimientos para BackEnd
+                    utilizando herramientas tecnológicas como, JavaScript, usando el Framework Node.Js, para la creación
+                    y administración de API's, gestión de base de datos relacionales utilizando MySql, además cuento con
+                    conocimientos básicos sobre Java y PHP.
+                    Para FrontEnd tengo conocimientos utilizando herramientas como HTML, CSS, integrándolos con el
+                    Framework Angular.
+                    Me interesa el aprendizaje continuo de nuevas herramientas con las que pueda solucionar de una forma
+                    ágil e innovadora los problemas utilizando la tecnología.</p>
+            </div>
+        </div>
+        <!--Featured Project-->
+        <div class="col-lg m-1" id="featured">
+            <div class="text-center">
+                <h2>Proyecto destacado</h2>
+                <h4>{{featuredProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide><img src="{{picture}}" alt="slide" style="display: block; width: 100%;"></slide>
+                </div>
+            </carousel>
+
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p>¡Visita la sección Portafolio para conocer más!</p>
+        </div>
+    </div>
+</div>
