@@ -20,8 +20,8 @@ export class ResumeComponent {
   DownloadFile() {
     const link = this.renderer.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', '/HOJA_DE_VIDA_JULIAN.pdf');
-    link.setAttribute('download', 'HOJA_DE_VIDA_JULIAN.pdf');
+    link.setAttribute('href', 'img/hojadevidajulian.pdf');
+    link.setAttribute('download', 'hojadevidajulian.pdf');
     link.click();
     link.remove();
   }
